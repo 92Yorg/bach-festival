@@ -1,13 +1,19 @@
-<style type="text/css">#bach-hero {
-    background: #45546b;
-    background: linear-gradient(11deg, #d26b52 49.7%, #45546b 50%);
+<style type="text/css">:root {
+		--dkBlue: #45546b;
+        --rust: d26b52;
+        --skyBlue: #73cacb;
+}
+
+#bach-hero {
+    background: var(--dkBlue);
+    background: linear-gradient(11deg, var(--skyBlue) 49.7%, var(--dkBlue) 50%);
 }
 
 header.hero-panel__header:before {
     content: "June 1-10";
     position: absolute;
     color: #fff;
-    transform: rotate(12deg);
+    /* transform: rotate(12deg); */
     text-transform: uppercase;
     font-weight: bold;
     font-size: 2rem;
